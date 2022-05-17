@@ -5,6 +5,7 @@ on:
 
 jobs:
   dependency-review:
+    name: Dependency Review
     permissions:
       actions: read
       contents: read
