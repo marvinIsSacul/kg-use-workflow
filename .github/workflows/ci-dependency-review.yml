@@ -1,0 +1,13 @@
+name: "Dependency Review"
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [master, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-review:
+    uses: marvinIsSacul/kg-test-workflow/.github/workflows/ci-dependency-review.yml@main
