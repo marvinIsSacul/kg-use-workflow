@@ -8,7 +8,7 @@ on:
 jobs:
   dependency-review:
     permissions:
-      security-events: write
       actions: read
       contents: read
+      security-events: write
     uses: marvinIsSacul/kg-test-workflow/.github/workflows/ci-dependency-review.yml@main
